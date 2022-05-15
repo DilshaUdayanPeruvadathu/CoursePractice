@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+#Container {
+    display: flex;
+    flex-direction: row;
+}
+
+#MainDiv {
+    width: 100%;
+    height: 100%;
+}
+
+#menudiv {
+    background-color: #2c2f3f;
+    width: 25em;
+    max-height: 51em;
+}
+
+
+
+.profileHead {
+    padding: 2em 2.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#profilePic {
+    width: 9em;
+    border-radius: 28em;
+    height: 9em;
+    box-shadow: 0px 0px 8px 8px #8d8e94;
+    margin-bottom: 1.5em;
+}
+
+#sociallink a {
+    font-size: 17px;
+    padding: 12px;
+}
+
+.spacebtwiconword {
+    padding: 20px;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+a.hov:hover,
+a.hov:active {
+    color: rgb(78, 180, 236);
+}
+
+#Section_2 {
+    flex-direction: column;
+    display: flex;
+}
+
+#footer {
+    margin-top: 4em;
+}

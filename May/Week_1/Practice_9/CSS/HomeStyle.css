@@ -1,0 +1,9 @@
+.bg-overlay {
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("./WallPaper.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    color: #fff;
+    height: 50vh;
+    padding-top: 20em;
+}
