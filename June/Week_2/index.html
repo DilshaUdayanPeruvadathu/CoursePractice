@@ -1,0 +1,37 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 5</title>
+    <script>
+        function Check() {
+            let n = document.getElementById('inputdata').value;
+            let sum = 0;
+            let prod =1;
+            while (n != 0) {
+                let num=n % 10;
+                if(num % 2 == 0)
+                {
+                    sum = sum + num;
+                }
+                else{
+                    prod =prod * num;
+                }
+                n = parseInt(n / 10);
+            }
+            document.getElementById('Answer').innerText = sum;
+        }
+    </script>
+</head>
+
+<body>
+    <p>Question : Sum of even digit and product of odd </p>
+    <p>Input a number below:</p>
+    <input type="number" id="inputdata" />
+    <button onclick="Check();"> Submit </button>
+    <p id="Answer"></p>
+</body>
+
+</html>

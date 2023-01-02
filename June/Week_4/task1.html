@@ -1,0 +1,31 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1</title>
+    <script>
+        function sumofposnum(k) {
+            const input = [ 1, -5, 2, 10, -30, 29, 50];
+            let sum = 0;
+            input.forEach(element => {
+                if(element>0)
+                {
+                    sum = sum+element;
+                }
+            });
+
+            document.getElementById('Answer').innerText = sum;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Question 1 : An array is given, return the sum of all the positives numbers. const input = [ 1, -5, 2, 10, -30, 29, 50];</h1>
+    <h3> Answer : </h3>
+    <button onclick="sumofposnum();"> Submit </button>
+    <p id="Answer"></p>
+</body>
+
+</html>

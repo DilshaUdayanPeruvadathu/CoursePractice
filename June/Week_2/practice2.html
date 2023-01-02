@@ -1,0 +1,37 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 5</title>
+    <script>
+        function Check() {
+            let val = document.getElementById('inputdata').value;
+            let n = val;
+            let sum = 0;
+            while (n != 0) {
+                let num= n % 10;
+                sum = sum + (num* num *num);
+                n = parseInt(n / 10);
+            }
+            if(sum == val)
+            {
+              document.getElementById('Answer').innerText = "number is amstrong number";
+            }
+            else{
+                document.getElementById('Answer').innerText = "number is not amstrong number";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <p>Question : Sum of even digit and product of odd </p>
+    <p>Input a number below:</p>
+    <input type="number" id="inputdata" />
+    <button onclick="Check();"> Submit </button>
+    <p id="Answer"></p>
+</body>
+
+</html>
